@@ -1,0 +1,1024 @@
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:04:32 +0100
+  
+Mysql2::Error::ConnectionError (Access denied for user 'root'@'localhost' (using password: NO)):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:05:02 +0100
+  
+ActiveRecord::NoDatabaseError (Unknown database 'joke_generator_development'):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (45.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE DATABASE `joke_generator_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE `joke_generator_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/bin/rake:23
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:05:32 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined method `rb' for ApplicationController:Class):
+  
+app/controllers/api/v1/jokes_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/jokes_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/jokes_controller.rb:1:in `<main>'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:06:05 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/symphony/Desktop/projects/joke_generator/app/services/joke_api_service.rb:8: syntax error, unexpected '\n', expecting =>):
+  
+app/services/joke_api_service.rb:8: syntax error, unexpected '\n', expecting =>
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:06:42 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `headers' for #<JokeApiService:0x00007fa4ef8d0f18>):
+  
+app/services/joke_api_service.rb:12:in `initialize'
+app/controllers/api/v1/jokes_controller.rb:5:in `new'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:08:02 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `options' for #<JokeApiService:0x00007fa4edbac360>):
+  
+app/services/joke_api_service.rb:17:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:08:12 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+HTTParty::RedirectionTooDeep (HTTP redirects too deep):
+  
+app/services/joke_api_service.rb:17:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:12:05 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 712ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:13:07 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 22807ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:14:08 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 486339ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:22:18 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 786ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `unprocessable_entity' for #<Api::V1::JokesController:0x00007fa4edd70200>):
+  
+app/controllers/api/v1/jokes_controller.rb:9:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:22:49 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 588ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:23:49 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 659ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:25:35 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (can't modify frozen Hash):
+  
+app/services/joke_api_service.rb:16:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:26:02 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 919ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:27:16 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 914ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:27:29 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 274ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:28:19 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+SocketError (Failed to open TCP connection to icanhazdadjoke.comapi:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/joke_api_service.rb:16:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:29:29 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 659ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:29:42 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+SocketError (Failed to open TCP connection to icanhazdadjoke.comsearch:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/joke_api_service.rb:16:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:30:12 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 667ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:32:12 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 187ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:32:25 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 553ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:34:25 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 422 Unprocessable Entity in 182ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:34:58 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 595ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:35:33 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 204 No Content in 42029ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:36:35 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 834ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:40:03 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 565ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/api/v1/jokes_controller.rb:8:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:40:16 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 233ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 10:40:42 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 594ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?limit=1" for 127.0.0.1 at 2018-10-30 10:40:58 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"limit"=>"1"}
+Completed 200 OK in 775ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often" for 127.0.0.1 at 2018-10-30 10:41:51 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often"}
+Completed 200 OK in 805ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often" for 127.0.0.1 at 2018-10-30 10:42:13 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often"}
+Completed 200 OK in 22993ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:42:56 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 200 OK in 10754ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:43:21 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/symphony/Desktop/projects/joke_generator/app/services/joke_api_service.rb:18: syntax error, unexpected '}', expecting =>
+    self.class.get('/search', headers: HEADERS, { params })
+                                                          ^):
+  
+app/services/joke_api_service.rb:18: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:44:58 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 200 OK in 19015ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:45:55 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 200 OK in 566ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:46:06 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/symphony/Desktop/projects/joke_generator/app/services/joke_api_service.rb:17: syntax error, unexpected ')', expecting =>):
+  
+app/services/joke_api_service.rb:17: syntax error, unexpected ')', expecting =>
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:46:15 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 200 OK in 181ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?term=often&limit=1" for 127.0.0.1 at 2018-10-30 10:48:11 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"term"=>"often", "limit"=>"1"}
+Completed 500 Internal Server Error in 69922ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `success?' for nil:NilClass):
+  
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes?limit=30" for 127.0.0.1 at 2018-10-30 10:49:56 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"limit"=>"30"}
+Completed 500 Internal Server Error in 354796ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `success?' for nil:NilClass):
+  
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes?limit=30" for 127.0.0.1 at 2018-10-30 10:56:00 +0100
+  
+ActionController::RoutingError (uninitialized constant ApplicationController::ApiErrors):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/jokes_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/jokes_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/jokes_controller.rb:1:in `<main>'
+Started GET "/api/v1/jokes?limit=30" for 127.0.0.1 at 2018-10-30 10:57:00 +0100
+  
+ActionController::RoutingError (uninitialized constant ApplicationController::ApiErrors):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/jokes_controller.rb:3:in `<module:V1>'
+app/controllers/api/v1/jokes_controller.rb:2:in `<module:Api>'
+app/controllers/api/v1/jokes_controller.rb:1:in `<main>'
+Started GET "/api/v1/jokes?limit=30" for 127.0.0.1 at 2018-10-30 10:58:43 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"limit"=>"30"}
+Completed 200 OK in 645ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?limit=1" for 127.0.0.1 at 2018-10-30 10:58:48 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"limit"=>"1"}
+Completed 200 OK in 563ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?limit=1" for 127.0.0.1 at 2018-10-30 11:01:08 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"limit"=>"1"}
+Completed 200 OK in 5441ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?limit=1" for 127.0.0.1 at 2018-10-30 11:01:27 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"limit"=>"1"}
+Completed 200 OK in 344667ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:07:18 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 650ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `delete!' for #<Array:0x00007fa4ee4f1ab0>
+Did you mean?  delete):
+  
+app/services/joke_generator_service.rb:9:in `new'
+app/services/joke_generator_service.rb:9:in `call'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:07:41 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 440867ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `delete!' for #<Array:0x00007fa4eceec4b8>
+Did you mean?  delete):
+  
+app/services/joke_generator_service.rb:9:in `new'
+app/services/joke_generator_service.rb:9:in `call'
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:15:05 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 682ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:16:31 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 651ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for nil:NilClass):
+  
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:16:44 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 649ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:17:21 +0100
+  
+SyntaxError (/Users/symphony/Desktop/projects/joke_generator/app/controllers/api/v1/jokes_controller.rb:9: syntax error, unexpected '}', expecting =>
+/Users/symphony/Desktop/projects/joke_generator/app/controllers/api/v1/jokes_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/v1/jokes_controller.rb:9: syntax error, unexpected '}', expecting =>
+app/controllers/api/v1/jokes_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 11:17:24 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 600ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:17:32 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 616ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for "1":String):
+  
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:17:43 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 200 OK in 661ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:17:46 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 200 OK in 612ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:25:52 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `call' for JokeApiService:Class):
+  
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:26:09 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 626ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_i' for #<ActionController::Parameters:0x00007fa4ee540660>
+Did you mean?  to_s
+               to_h):
+  
+app/controllers/api/v1/jokes_controller.rb:14:in `joke_count'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:26:21 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 601ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `count' for #<JokeGeneratorService:0x00007fa4ee398128>):
+  
+app/services/joke_generator_service.rb:10:in `call'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:26:45 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for #<ActionController::Parameters:0x00007fa4ecdb2408>):
+  
+app/services/joke_generator_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:32:52 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 191062ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for #<ActionController::Parameters:0x00007fa4efc09018>):
+  
+app/services/joke_generator_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:36:07 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 52368ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `success?' for nil:NilClass):
+  
+app/services/joke_api_service.rb:13:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:37:02 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 100061ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for #<ActionController::Parameters:0x00007fa4ee4b21f8>):
+  
+app/services/joke_generator_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:8:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:38:45 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 7774ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for "1":String):
+  
+app/services/joke_generator_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:8:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:39:18 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 200 OK in 16364ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:42:49 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 590ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_i' for #<ActionController::Parameters:0x00007fa4ee3a8b68>
+Did you mean?  to_s
+               to_h):
+  
+app/services/joke_generator_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:44:17 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 602ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_i' for #<ActionController::Parameters:0x00007fa4ecb6af88>
+Did you mean?  to_s
+               to_h):
+  
+app/services/joke_generator_service.rb:12:in `call'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:44:31 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 500 Internal Server Error in 35847ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `times' for #<ActionController::Parameters:0x00007fa4ee5fa150>):
+  
+app/services/joke_generator_service.rb:12:in `call'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes?joke_count=1" for 127.0.0.1 at 2018-10-30 11:49:00 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>"1"}
+Completed 200 OK in 717ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count=" for 127.0.0.1 at 2018-10-30 11:49:05 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>""}
+Completed 200 OK in 604ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 11:49:09 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 200 OK in 640ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 12:47:08 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 200 OK in 611ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 12:47:17 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 200 OK in 612ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 12:57:46 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 625ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:01:29 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 597ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:02:31 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/symphony/Desktop/projects/joke_generator/app/services/joke_api_service.rb:22: syntax error, unexpected '\n', expecting =>):
+  
+app/services/joke_api_service.rb:22: syntax error, unexpected '\n', expecting =>
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:03:40 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 673ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:10:00 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 628ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:10:58 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to :80 (Connection refused - connect(2) for nil port 80)):
+  
+app/services/joke_api_service.rb:21:in `block in get_all_jokes'
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:11:23 +0100
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 567ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:37 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 616ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:39 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 583ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:41 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 510ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:42 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:43 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:44 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 565ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:45 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:13:47 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 656ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_cached_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:15:42 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 531ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:15:44 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:15:45 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 572ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:16:27 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 500 Internal Server Error in 614ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
+Started GET "/api/v1/jokes?joke_count" for 127.0.0.1 at 2018-10-30 13:17:26 +0100
+Processing by Api::V1::JokesController#index as */*
+  Parameters: {"joke_count"=>nil}
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:27:26 +0100
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/symphony/.rvm/gems/ruby-2.3.7/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 626ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/api/v1/jokes_controller.rb:12:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:28:09 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 128505ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/api/v1/jokes_controller.rb:13:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:30:20 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 180283ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `success?' for nil:NilClass):
+  
+app/services/joke_api_service.rb:13:in `call'
+app/controllers/api/v1/jokes_controller.rb:7:in `block in index'
+app/controllers/api/v1/jokes_controller.rb:6:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:33:26 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `success?' for #<String:0x00007ff1d341d1e8>
+Did you mean?  succ!):
+  
+app/services/joke_api_service.rb:15:in `call'
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:34:44 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `success?' for #<String:0x00007ff1d5d5b028>
+Did you mean?  succ!):
+  
+app/services/joke_api_service.rb:13:in `call'
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:35:07 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 663ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no _dump_data is defined for class Proc):
+  
+app/services/joke_api_service.rb:20:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:7:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:37:40 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 534ms (ActiveRecord: 0.0ms)
+
+
+  
+Encoding::UndefinedConversionError ("\xE2" from ASCII-8BIT to UTF-8):
+  
+app/controllers/api/v1/jokes_controller.rb:13:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:37:57 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 625ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/services/joke_generator_service.rb:17:in `block in generate_jokes'
+app/services/joke_generator_service.rb:16:in `generate_jokes'
+app/services/joke_generator_service.rb:10:in `call'
+app/controllers/api/v1/jokes_controller.rb:11:in `index'
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:38:46 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 48221ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:39:42 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 6240ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:39:53 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:39:55 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/jokes" for 127.0.0.1 at 2018-10-30 13:41:18 +0100
+Processing by Api::V1::JokesController#index as */*
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms)
+
+
+  
+SocketError (Failed to open TCP connection to icanhazdadjoke.coam:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/services/joke_api_service.rb:18:in `block in get_all_jokes'
+app/services/joke_api_service.rb:17:in `get_all_jokes'
+app/services/joke_api_service.rb:11:in `call'
+app/controllers/api/v1/jokes_controller.rb:5:in `index'
