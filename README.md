@@ -1,24 +1,51 @@
-# README
+## Requirements
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application uses:
 
-Things you may want to cover:
+* Ruby 2.3.7p456
+* Rails 5.2.1
+* Mysql 0.5.2
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+Clone the the repository
 
-* Configuration
+```console
+$ git clone https://github.com/markolucic/joke_generator.git
+```
 
-* Database creation
+Install dependencies:
 
-* Database initialization
+```console
+$ bundle install
+```
 
-* How to run the test suite
+Set up the database:
 
-* Services (job queues, cache servers, search engines, etc.)
+```console
+$ rails db:setup
+```
 
-* Deployment instructions
+Run the application:
 
-* ...
+```console
+$ rails s
+```
+
+## Testing
+
+To run the tests:
+
+```console
+$ rspec
+```
+
+## Usage
+ 
+In order to generate new jokes 
+
+```
+GET http://localhost:3000/api/v1/jokes
+
+param: joke_count - number of jokes to generate (optional)
+```
