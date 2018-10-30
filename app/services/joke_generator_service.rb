@@ -7,12 +7,13 @@ class JokeGeneratorService
   end
 
   def call
-    generate_jokes
+    return unless jokes
+    generate_new_jokes
   end
 
   private
 
-  def generate_jokes
+  def generate_new_jokes
     Rails.cache.fetch('new_jokes', expires_in: 1.hour) do
       MarkovChains::Generator.new(jokes).get_sentences(count.to_i)
     end
