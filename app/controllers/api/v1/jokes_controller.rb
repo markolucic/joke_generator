@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class JokesController < ApplicationController
@@ -5,7 +7,7 @@ module Api
         response = JokeApiService.new.call
         jokes = JokeGeneratorService.new(response,
                                          params[:joke_count] || 5).call
-        
+
         render json: { jokes: jokes }
       end
     end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -36,11 +38,11 @@ gem 'httparty', '~> 0.16.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 3.8.0'
-  gem 'webmock', '~> 3.4.2'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'mock_redis'
+  gem 'rspec-rails', '~> 3.8.0'
   gem 'rubocop', '~> 0.60.0', require: false
+  gem 'webmock', '~> 3.4.2'
 end
 
 group :development do
@@ -50,6 +52,5 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

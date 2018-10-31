@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class JokeApiService
   include HTTParty
 
@@ -18,7 +20,7 @@ class JokeApiService
       response = self.class.get('/search', headers: HEADERS)
       unless response.success?
         Rails.cache.delete('api_jokes')
-        raise ApiExceptions::JokeApiError 
+        raise ApiExceptions::JokeApiError
       end
       response.parsed_response
     end

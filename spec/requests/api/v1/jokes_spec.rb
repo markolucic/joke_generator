@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Jokes' do
   let(:redis) { MockRedis.new }
   let(:api_url) { 'https://icanhazdadjoke.com/search' }
-  let(:api_jokes) { "Did you hear the one about the guy with the broken hearing aid? Neither did he." }
+  let(:api_jokes) { 'Did you hear the one about the guy with the broken hearing aid? Neither did he.' }
 
   describe 'GET /api/v1/jokes' do
     context 'response is not cached' do
@@ -23,10 +25,10 @@ RSpec.describe 'Jokes' do
         expect(JSON.parse(response.body)['jokes'].count).to eq 5
       end
     end
-    
+
     context 'response is cached' do
       before do
-        stub_request(:get, api_url).to_return(body: "")
+        stub_request(:get, api_url).to_return(body: '')
       end
 
       it 'returns cached jokes' do

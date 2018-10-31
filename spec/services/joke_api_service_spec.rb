@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe JokeApiService do
@@ -9,7 +11,7 @@ RSpec.describe JokeApiService do
     'https://icanhazdadjoke.com/search'
   end
   let(:api_jokes) do
-    "Did you hear the one about the guy with the broken hearing aid? Neither did he."
+    'Did you hear the one about the guy with the broken hearing aid? Neither did he.'
   end
 
   context 'when valid params' do

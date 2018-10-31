@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class JokeGeneratorService
   attr_reader :jokes, :count
 
@@ -8,6 +10,7 @@ class JokeGeneratorService
 
   def call
     return unless jokes
+
     generate_new_jokes
   end
 
