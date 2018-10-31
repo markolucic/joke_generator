@@ -1,0 +1,21 @@
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'vendor/bundle/**/*'
+    - '**/*_helper.rb'
+Rails:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+  - 'config/routes.rb'
+  - '**/*_spec.rb'
+  - 'config/environments/production.rb'
+  - 'config/environments/development.rb'
+  - '**/*_spec.rb'
+Metrics/LineLength:
+  Max: 120

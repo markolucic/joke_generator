@@ -2,7 +2,7 @@
 
 This application uses:
 
-* Ruby 2.3.7p456
+* Ruby 2.5.1
 * Rails 5.2.1
 * Mysql 0.5.2
 

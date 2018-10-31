@@ -17,4 +17,4 @@ module ApiExceptions
       end
     end
   end
-end  
+end
